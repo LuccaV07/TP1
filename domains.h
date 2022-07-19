@@ -26,8 +26,8 @@ inline string City::getName() const{
 }
 
 inline const string City::CITIES[20] = {"Antalya", "Bangkok", "Delhi", "Dubai", "Hong Kong", "Londres",
-    "Macau", "Mumbai", "Paris", "Rio de Janeiro", "São Paulo", "Seul", "Istambul", "Kuala Lumpur",
-    "Nova Iorque", "Osaka", "Phuket", "Shenzhen", "Tóquio"};
+    "Macau", "Mumbai", "Paris", "Rio de Janeiro", "Sao Paulo", "Seul", "Istambul", "Kuala Lumpur",
+    "Nova Iorque", "Osaka", "Phuket", "Shenzhen", "Toquio"};
 
 ///
 /// Declaração do domínio que define um identificador para avaliações e hospedagens.
@@ -139,8 +139,8 @@ inline string Language::getName() const{
     return name;
 }
 
-inline const string Language::LANGUAGES[10] = {"Inglês", "Chinês Mandarim", "Hindi", "Espanhol", "Francês", "Árabe", "Bengali",
-    "Russo", "Português", "Indonésio"};
+inline const string Language::LANGUAGES[10] = {"Ingles", "Chines Mandarim", "Hindi", "Espanhol", "Frances", "Arabe", "Bengali",
+    "Russo", "Portugues", "Indonesio"};
 
 ///
 /// Declaração do domínio referente à forma de se identificar do usuário.
@@ -206,7 +206,7 @@ inline string Country::getName() const{
 }
 
 inline const string Country::COUNTRIES[12] = {"Estados Unidos", "Brasil", "China", "Coreia do Sul", "Emirados",
-    "França", "Índia", "Japão", "Malásia", "Reino Unido", "Tailândia", "Turquia"};
+    "França", "India", "Japao", "Malasia", "Reino Unido", "Tailandia", "Turquia"};
 
 ///
 /// Declaração do domínio que armazena a palavra-chave que valida acesso do usuário ao

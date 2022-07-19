@@ -14,8 +14,8 @@ private:
     Email email;
     Password password;
     Language language;
-    Date anniversary;
-    Description text;
+    Date date;
+    Description description;
 public:
     void setName(const Name&);
     Name getName() const;
@@ -25,10 +25,10 @@ public:
     Password getPassword() const;
     void setLanguage(const Language&);
     Language getLanguage() const;
-    void setAnniversary(const Date&);
-    Date getAnniversary() const;
-    void setText(const Description&);
-    Description getText() const;
+    void setDate(const Date&);
+    Date getDate() const;
+    void setDescription(const Description&);
+    Description getDescription() const;
 };
 
 inline void User::setName(const Name& name){
@@ -63,20 +63,20 @@ inline Language User::getLanguage() const{
     return language;
 }
 
-inline void User::setAnniversary(const Date& anniversay){
-    this->anniversary = anniversay;
+inline void User::setDate(const Date& date){
+    this->date = date;
 }
 
-inline Date User::getAnniversary() const{
-    return anniversary;
+inline Date User::getDate() const{
+    return date;
 }
 
-inline void User::setText(const Description& text){
-    this->text = text;
+inline void User::setDescription(const Description& description){
+    this->description = description;
 }
 
-inline Description User::getText() const{
-    return text;
+inline Description User::getDescription() const{
+    return description;
 }
 
 ///
@@ -88,14 +88,14 @@ class Rating {
 private:
     Code code;
     Grade grade;
-    Description text;
+    Description description;
 public:
     void setCode(const Code&);
     Code getCode() const;
     void setGrade(const Grade&);
     Grade getGrade() const;
-    void setText(const Description&);
-    Description getText() const;
+    void setDescription(const Description&);
+    Description getDescription() const;
 };
 
 inline void Rating::setCode(const Code& code){
@@ -114,12 +114,12 @@ inline Grade Rating::getGrade() const{
     return grade;
 }
 
-inline void Rating::setText(const Description& text){
-    this->text = text;
+inline void Rating::setDescription(const Description& description){
+    this->description = description;
 }
 
-inline Description Rating::getText() const{
-    return text;
+inline Description Rating::getDescription() const{
+    return description;
 }
 
 ///
@@ -133,7 +133,7 @@ private:
     City city;
     Country country;
     Grade grade;
-    Description text;
+    Description description;
 public:
     void setCode(const Code&);
     Code getCode() const;
@@ -143,8 +143,8 @@ public:
     Country getCountry() const;
     void setGrade(const Grade&);
     Grade getGrade() const;
-    void setText(const Description&);
-    Description getText() const;
+    void setDescription(const Description&);
+    Description getDescription() const;
 };
 
 inline void Accommodation::setCode(const Code& code){
@@ -179,12 +179,12 @@ inline Grade Accommodation::getGrade() const{
     return grade;
 }
 
-inline void Accommodation::setText(const Description& text){
-    this->text = text;
+inline void Accommodation::setDescription(const Description& description){
+    this->description = description;
 }
 
-inline Description Accommodation::getText() const{
-    return text;
+inline Description Accommodation::getDescription() const{
+    return description;
 }
 
 #endif // ENTITIES_H_INCLUDED

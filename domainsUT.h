@@ -2,6 +2,7 @@
 #define UNITTESTS_H_INCLUDED
 
 #include "domains.h"
+#include "domains.cpp"
 
 using namespace std;
 
@@ -26,7 +27,7 @@ public:
 };
 
 inline const string CityUT::VALOR_VALIDO = "Seul";
-inline const string CityUT::VALOR_INVALIDO = "Brasília";
+inline const string CityUT::VALOR_INVALIDO = "Brasilia";
 
 ///
 /// Definição dos Objetos responsáveis pelos testes de unidade do
@@ -140,8 +141,8 @@ public:
     int run();
 };
 
-inline const string LanguageUT::VALOR_VALIDO = "Português";
-inline const string LanguageUT::VALOR_INVALIDO = "ÉLfico";
+inline const string LanguageUT::VALOR_VALIDO = "Portugues";
+inline const string LanguageUT::VALOR_INVALIDO = "Elfico";
 
 ///
 /// Definição dos Objetos responsáveis pelos testes de unidade do

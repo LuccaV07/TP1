@@ -13,8 +13,8 @@ private:
     const static string VALOR_VALIDO_EMAIL;
     const static string VALOR_VALIDO_PASSWORD;
     const static string VALOR_VALIDO_LANGUAGE;
-    const static string VALOR_VALIDO_ANNIVERSARY;
-    const static string VALOR_VALIDO_TEXT;
+    const static string VALOR_VALIDO_DATE;
+    const static string VALOR_VALIDO_DESCRIPTION;
     User *user;
     int status;
     void setUp();
@@ -30,8 +30,8 @@ inline const string UserUT::VALOR_VALIDO_NAME = "Lucca Vivacqua";
 inline const string UserUT::VALOR_VALIDO_EMAIL = "luccavivacqua123@gmail.com";
 inline const string UserUT::VALOR_VALIDO_PASSWORD = "S&nh4";
 inline const string UserUT::VALOR_VALIDO_LANGUAGE = "Português";
-inline const string UserUT::VALOR_VALIDO_ANNIVERSARY = "24/Fev";
-inline const string UserUT::VALOR_VALIDO_TEXT = "Este e um texto valido.";
+inline const string UserUT::VALOR_VALIDO_DATE = "24/Fev";
+inline const string UserUT::VALOR_VALIDO_DESCRIPTION = "Este e um texto valido.";
 
 ///
 /// Definição do objeto responsáveis pelos testes de unidade
@@ -41,7 +41,7 @@ class RatingUT {
 private:
     const static string VALOR_VALIDO_CODE;
     const static int VALOR_VALIDO_GRADE = 7;
-    const static string VALOR_VALIDO_TEXT;
+    const static string VALOR_VALIDO_DESCRIPTION;
     Rating *rating;
     int status;
     void setUp();
@@ -54,7 +54,7 @@ public:
 };
 
 inline const string RatingUT::VALOR_VALIDO_CODE = "64826482917";
-inline const string RatingUT::VALOR_VALIDO_TEXT = "Este e um texto valido.";
+inline const string RatingUT::VALOR_VALIDO_DESCRIPTION = "Este e um texto valido.";
 
 ///
 /// Definição do objeto responsáveis pelos testes de unidade
@@ -66,7 +66,8 @@ private:
     const static string VALOR_VALIDO_CITY;
     const static string VALOR_VALIDO_COUNTRY;
     const static int VALOR_VALIDO_GRADE = 7;
-    const static string VALOR_VALIDO_TEXT;
+    const static string VALOR_VALIDO_DESCRIPTION;
+    Accommodation *accommodation;
     int status;
     void setUp();
     void tearDown();
@@ -80,6 +81,6 @@ public:
 inline const string AccommodationUT::VALOR_VALIDO_CODE = "64826482917";
 inline const string AccommodationUT::VALOR_VALIDO_CITY = "Seul";
 inline const string AccommodationUT::VALOR_VALIDO_COUNTRY = "Brasil";
-inline const string AccommodationUT::VALOR_VALIDO_TEXT = "Este e um texto valido.";
+inline const string AccommodationUT::VALOR_VALIDO_DESCRIPTION = "Este e um texto valido.";
 
 #endif // ENTITIESUT_H_INCLUDED

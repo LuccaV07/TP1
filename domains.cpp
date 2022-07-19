@@ -201,7 +201,7 @@ void Language::validate(string name) {
         }
     }
 
-    if (check == 0){
+    if (check == 0) {
         throw invalid_argument("Argumento Inválido.");
     }
 }

@@ -1,5 +1,7 @@
 #include "domainsUT.h"
 
+using namespace std;
+
 // Métodos da classe CodeUT()
 void CodeUT::setUp() {
     code = new Code();
