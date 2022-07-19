@@ -11,45 +11,75 @@ void UserUT::tearDown() {
 }
 
 void UserUT::testSuccess() {
-    Name name;
-    name.setName(VALOR_VALIDO_NAME);
-    user->setName(name);
-    if (user->getName().getName() != VALOR_VALIDO_NAME) {
+    try {
+        Name name;
+        name.setName(VALOR_VALIDO_NAME);
+        user->setName(name);
+        if (user->getName().getName() != VALOR_VALIDO_NAME) {
+            status = FAILURE;
+        }
+    }
+    catch (invalid_argument &except){
         status = FAILURE;
     }
 
-    Email email;
-    email.setAddress(VALOR_VALIDO_EMAIL);
-    user->setEmail(email);
-    if (user->getEmail().getAddress() != VALOR_VALIDO_EMAIL) {
+    try {
+        Email email;
+        email.setAddress(VALOR_VALIDO_EMAIL);
+        user->setEmail(email);
+        if (user->getEmail().getAddress() != VALOR_VALIDO_EMAIL) {
+            status = FAILURE;
+        }
+    }
+    catch (invalid_argument &except){
         status = FAILURE;
     }
 
-    Password password;
-    password.setKeyword(VALOR_VALIDO_PASSWORD);
-    user->setPassword(password);
-    if (user->getPassword().getKeyword() != VALOR_VALIDO_PASSWORD) {
+    try {
+        Password password;
+        password.setKeyword(VALOR_VALIDO_PASSWORD);
+        user->setPassword(password);
+        if (user->getPassword().getKeyword() != VALOR_VALIDO_PASSWORD) {
+            status = FAILURE;
+        }
+    }
+    catch (invalid_argument &except){
         status = FAILURE;
     }
 
-    Language language;
-    language.setName(VALOR_VALIDO_LANGUAGE);
-    user->setLanguage(language);
-    if (user->getLanguage().getName() != VALOR_VALIDO_LANGUAGE) {
+    try {
+        Language language;
+        language.setName(VALOR_VALIDO_LANGUAGE);
+        user->setLanguage(language);
+        if (user->getLanguage().getName() != VALOR_VALIDO_LANGUAGE) {
+            status = FAILURE;
+        }
+    }
+    catch (invalid_argument &except){
         status = FAILURE;
     }
 
-    Date date;
-    date.setDate(VALOR_VALIDO_DATE);
-    user->setDate(date);
-    if (user->getDate().getDate() != VALOR_VALIDO_DATE) {
+    try {
+        Date date;
+        date.setDate(VALOR_VALIDO_DATE);
+        user->setDate(date);
+        if (user->getDate().getDate() != VALOR_VALIDO_DATE) {
+            status = FAILURE;
+        }
+    }
+    catch (invalid_argument &except){
         status = FAILURE;
     }
 
-    Description description;
-    description.setText(VALOR_VALIDO_DESCRIPTION);
-    user->setDescription(description);
-    if (user->getDescription().getText() != VALOR_VALIDO_DESCRIPTION) {
+    try {
+        Description description;
+        description.setText(VALOR_VALIDO_DESCRIPTION);
+        user->setDescription(description);
+        if (user->getDescription().getText() != VALOR_VALIDO_DESCRIPTION) {
+            status = FAILURE;
+        }
+    }
+    catch (invalid_argument &except){
         status = FAILURE;
     }
 }
@@ -72,24 +102,39 @@ void RatingUT::tearDown() {
 }
 
 void RatingUT::testSuccess() {
-    Code code;
-    code.setValue(VALOR_VALIDO_CODE);
-    rating->setCode(code);
-    if (rating->getCode().getValue() != VALOR_VALIDO_CODE) {
+    try {
+        Code code;
+        code.setValue(VALOR_VALIDO_CODE);
+        rating->setCode(code);
+        if (rating->getCode().getValue() != VALOR_VALIDO_CODE) {
+            status = FAILURE;
+        }
+    }
+    catch (invalid_argument &except){
         status = FAILURE;
     }
 
-    Grade grade;
-    grade.setValue(VALOR_VALIDO_GRADE);
-    rating->setGrade(grade);
-    if (rating->getGrade().getValue() != VALOR_VALIDO_GRADE) {
+    try {
+        Grade grade;
+        grade.setValue(VALOR_VALIDO_GRADE);
+        rating->setGrade(grade);
+        if (rating->getGrade().getValue() != VALOR_VALIDO_GRADE) {
+            status = FAILURE;
+        }
+    }
+    catch (invalid_argument &except){
         status = FAILURE;
     }
 
-    Description description;
-    description.setText(VALOR_VALIDO_DESCRIPTION);
-    rating->setDescription(description);
-    if (rating->getDescription().getText() != VALOR_VALIDO_DESCRIPTION) {
+    try {
+        Description description;
+        description.setText(VALOR_VALIDO_DESCRIPTION);
+        rating->setDescription(description);
+        if (rating->getDescription().getText() != VALOR_VALIDO_DESCRIPTION) {
+            status = FAILURE;
+        }
+    }
+    catch (invalid_argument &except){
         status = FAILURE;
     }
 }
@@ -112,38 +157,63 @@ void AccommodationUT::tearDown() {
 }
 
 void AccommodationUT::testSuccess() {
-    Code code;
-    code.setValue(VALOR_VALIDO_CODE);
-    accommodation->setCode(code);
-    if (accommodation->getCode().getValue() != VALOR_VALIDO_CODE) {
+    try {
+        Code code;
+        code.setValue(VALOR_VALIDO_CODE);
+        accommodation->setCode(code);
+        if (accommodation->getCode().getValue() != VALOR_VALIDO_CODE) {
+            status = FAILURE;
+        }
+    }
+    catch (invalid_argument &except){
         status = FAILURE;
     }
 
-    City city;
-    city.setName(VALOR_VALIDO_CITY);
-    accommodation->setCity(city);
-    if (accommodation->getCity().getName() != VALOR_VALIDO_CITY) {
+    try {
+        City city;
+        city.setName(VALOR_VALIDO_CITY);
+        accommodation->setCity(city);
+        if (accommodation->getCity().getName() != VALOR_VALIDO_CITY) {
+            status = FAILURE;
+        }
+    }
+    catch (invalid_argument &except){
         status = FAILURE;
     }
 
-    Country country;
-    country.setName(VALOR_VALIDO_COUNTRY);
-    accommodation->setCountry(country);
-    if (accommodation->getCountry().getName() != VALOR_VALIDO_COUNTRY) {
+    try {
+        Country country;
+        country.setName(VALOR_VALIDO_COUNTRY);
+        accommodation->setCountry(country);
+        if (accommodation->getCountry().getName() != VALOR_VALIDO_COUNTRY) {
+            status = FAILURE;
+        }
+    }
+    catch (invalid_argument &except){
         status = FAILURE;
     }
 
-    Grade grade;
-    grade.setValue(VALOR_VALIDO_GRADE);
-    accommodation->setGrade(grade);
-    if (accommodation->getGrade().getValue() != VALOR_VALIDO_GRADE) {
+    try {
+        Grade grade;
+        grade.setValue(VALOR_VALIDO_GRADE);
+        accommodation->setGrade(grade);
+        if (accommodation->getGrade().getValue() != VALOR_VALIDO_GRADE) {
+            status = FAILURE;
+        }
+    }
+    catch (invalid_argument &except){
         status = FAILURE;
     }
 
-    Description description;
-    description.setText(VALOR_VALIDO_DESCRIPTION);
-    accommodation->setDescription(description);
-    if (accommodation->getDescription().getText() != VALOR_VALIDO_DESCRIPTION) {
+    try {
+        Description description;
+        description.setText(VALOR_VALIDO_DESCRIPTION);
+        accommodation->setDescription(description);
+        if (accommodation->getDescription().getText() != VALOR_VALIDO_DESCRIPTION) {
+            status = FAILURE;
+        }
+    }
+    catch (invalid_argument &except){
         status = FAILURE;
     }
 }
